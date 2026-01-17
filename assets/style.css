@@ -54,6 +54,14 @@ a:hover{color: var(--accent)}
 }
 .skip-link:focus{left: 14px}
 
+.brand-logo{
+  display:block;
+  height: 64px;
+  width: auto;
+  max-width: 360px;
+  object-fit: contain;
+}
+
 .site-header{
   position: sticky;
   top: 0;
@@ -72,24 +80,7 @@ a:hover{color: var(--accent)}
 .brand{
   display:flex;
   align-items:center;
-  gap: 10px;
   text-decoration:none;
-}
-.brand-mark{
-  width: 34px;
-  height: 34px;
-  border-radius: 12px;
-  display:grid;
-  place-items:center;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: rgba(0,0,0,0.85);
-  box-shadow: var(--shadow);
-}
-.brand-name{
-  font-weight: 700;
-  letter-spacing: -0.01em;
 }
 
 .site-nav{
@@ -154,6 +145,7 @@ a:hover{color: var(--accent)}
   .site-nav.is-open{display:flex}
   .site-nav a{padding: 8px 10px; border-radius: 12px}
   .site-nav a:hover{background: var(--panel)}
+  .brand-logo{height: 30px; max-width: 170px;}
 }
 
 .hero{
@@ -213,9 +205,7 @@ a:hover{color: var(--accent)}
   border: 0;
   color: rgba(0,0,0,0.88);
 }
-.btn-primary:hover{
-  filter: brightness(1.03);
-}
+.btn-primary:hover{filter: brightness(1.03);}
 .btn-small{padding: 10px 12px; border-radius: 14px}
 
 .card{
@@ -229,9 +219,7 @@ a:hover{color: var(--accent)}
 .muted{color: var(--muted)}
 .small{font-size: 0.92rem}
 
-.section{
-  padding: 30px 0;
-}
+.section{padding: 30px 0;}
 .section-title{
   font-size: 1.4rem;
   margin: 0 0 14px 0;
@@ -262,29 +250,20 @@ a:hover{color: var(--accent)}
   font-size: 0.9rem;
 }
 
-.content{
-  padding: 48px 0 22px 0;
-}
-.prose{
-  max-width: 74ch;
-}
+.content{padding: 48px 0 22px 0;}
+.prose{max-width: 74ch;}
 .prose h1{
   font-size: clamp(1.8rem, 2.4vw + 1rem, 2.6rem);
   letter-spacing: -0.03em;
   margin: 0 0 10px 0;
 }
-.prose h2{
-  margin-top: 26px;
-  letter-spacing: -0.02em;
-}
+.prose h2{margin-top: 26px; letter-spacing: -0.02em;}
 .prose p{color: var(--muted)}
 .prose li{color: var(--muted); margin: 6px 0}
 .prose a{color: var(--text)}
 .prose a:hover{color: var(--accent)}
 
-.service{
-  scroll-margin-top: 90px;
-}
+.service{scroll-margin-top: 90px;}
 .badge{
   display:inline-flex;
   align-items:center;
@@ -328,12 +307,6 @@ a:hover{color: var(--accent)}
   text-decoration:none;
   color: var(--muted);
   margin: 6px 0;
-}
-.footer-brand{
-  display:flex;
-  align-items:center;
-  gap: 10px;
-  font-weight: 700;
 }
 .footer-bottom{
   display:flex;
