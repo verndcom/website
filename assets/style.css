@@ -337,3 +337,16 @@ a:hover{color: var(--accent)}
   border-top: 1px solid var(--border);
   margin: 18px 0;
 }
+
+
+/* Logo variant switching:
+   - In dark mode, use logo-light.png (light logo)
+   - In light mode, use logo-dark.png (dark logo)
+*/
+.logo-for-light{display:none;}
+.logo-for-dark{display:block;}
+
+@media (prefers-color-scheme: light){
+  .logo-for-light{display:block;}
+  .logo-for-dark{display:none;}
+}
